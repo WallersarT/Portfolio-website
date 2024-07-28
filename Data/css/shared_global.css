@@ -20,7 +20,7 @@
 	/* Gradients */
 	/* --gpGradient-StoreBackground: radial-gradient(farthest-corner at 40px 40px,#2A475E 0%, #1B2838 80%); */
 	--gpGradient-StoreBackground: linear-gradient(180deg, var(--gpStoreDarkGrey) 0%, var(--gpStoreDarkerGrey) 80%);
-	--gpGradient-LibraryBackground: radial-gradient(farthest-corner at 40px 40px, #3D4450 0%, #23262E 80%);
+	--gpGradient-LibraryBackground: radial-gradient(farthest-corner at 40px 40px,#3D4450 0%, #23262E 80%);
 
 	/* Colours */
 	--gpColor-Blue: #1A9FFF;
@@ -78,8 +78,8 @@
 	--gpWidth-2colcap: calc((var(--screen-width) - (1 * var(--gpSpace-Gap)) - (2 * var(--gpSpace-Gutter))) / 2);
 	--gpWidth-1colcap: calc((var(--screen-width) - (2 * var(--gpSpace-Gutter))));
 
-	/* Fixed heights */
-	--gpStoreMenuHeight: 58px;
+    /* Fixed heights */
+    --gpStoreMenuHeight: 58px;
 
 	/* Surfaces */
 	--gpShadow-Small: 0px 2px 2px 0px #0000003D;
@@ -120,18 +120,17 @@
 .avatar_block_status_offline,
 .appHubIconHolder.ignored {
 
-	background: -webkit-linear-gradient(top, rgba(106, 106, 106, 1) 5%, rgba(85, 85, 85, 1) 95%);
-	background: linear-gradient(to bottom, rgba(106, 106, 106, 1) 5%, rgba(85, 85, 85, 1) 95%);
+	background: -webkit-linear-gradient( top, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
+	background: linear-gradient( to bottom, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
 	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
 	filter: none;
 }
-
 .playerAvatar.offline img,
 .friend_status_offline .friend_block_avatar img,
 .appHubIconHolder.offline img,
 .avatar_block_status_offline img {
-	background: -webkit-linear-gradient(top, #515151 5%, #474747 95%);
-	background: linear-gradient(to bottom, #515151 5%, #474747 95%);
+	background: -webkit-linear-gradient( top, #515151 5%, #474747 95%);
+	background: linear-gradient( to bottom, #515151 5%, #474747 95%);
 }
 
 /* Online State */
@@ -142,18 +141,17 @@
 .avatar_block_status_online {
 	background-color: #57cbde;
 
-	background: -webkit-linear-gradient(top, rgba(83, 164, 196, 1) 5%, rgba(69, 128, 151, 1) 95%);
-	background: linear-gradient(to bottom, rgba(83, 164, 196, 1) 5%, rgba(69, 128, 151, 1) 95%);
+	background: -webkit-linear-gradient( top, rgba(83,164,196,1) 5%, rgba(69,128,151,1) 95%);
+	background: linear-gradient( to bottom, rgba(83,164,196,1) 5%, rgba(69,128,151,1) 95%);
 	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
 	filter: none;
 }
-
 .playerAvatar.online img,
 .friend_status_online .friend_block_avatar img,
 .appHubIconHolder.online img,
 .avatar_block_status_online img {
-	background: -webkit-linear-gradient(top, #41778f 5%, #3d697b 95%);
-	background: linear-gradient(to bottom, #41778f 5%, #3d697b 95%);
+	background: -webkit-linear-gradient( top, #41778f 5%, #3d697b 95%);
+	background: linear-gradient( to bottom, #41778f 5%, #3d697b 95%);
 }
 
 /* In-Game State */
@@ -164,18 +162,17 @@
 .avatar_block_status_in-game {
 	background-color: #90ba3c;
 
-	background: -webkit-linear-gradient(top, rgba(143, 185, 59, 1) 5%, rgba(110, 140, 49, 1) 95%);
-	background: linear-gradient(to bottom, rgba(143, 185, 59, 1) 5%, rgba(110, 140, 49, 1) 95%);
+	background: -webkit-linear-gradient( top, rgba(143,185,59,1) 5%, rgba(110,140,49,1) 95%);
+	background: linear-gradient( to bottom, rgba(143,185,59,1) 5%, rgba(110,140,49,1) 95%);
 	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
 	filter: none;
 }
-
 .playerAvatar.in-game img,
 .friend_status_in-game .friend_block_avatar img,
 .appHubIconHolder.in-game img,
 .avatar_block_status_in-game img {
-	background: -webkit-linear-gradient(top, #66812e 5%, #59702b 95%);
-	background: linear-gradient(to bottom, #66812e 5%, #59702b 95%);
+	background: -webkit-linear-gradient( top, #66812e 5%, #59702b 95%);
+	background: linear-gradient( to bottom, #66812e 5%, #59702b 95%);
 }
 
 
@@ -187,8 +184,8 @@
 .avatar_block_status_golden {
 	background-color: #e4ca63;
 
-	background: -webkit-linear-gradient(305deg, #d5bf6a 10%, #ffe2a9 40%, #ba995c 52%, #ba995c 61%, #d5bf6a 85%);
-	background: linear-gradient(145deg, #d5bf6a 10%, #ffe2a9 40%, #ba995c 52%, #ba995c 61%, #d5bf6a 85%);
+	background: -webkit-linear-gradient( 305deg, #d5bf6a 10%,#ffe2a9 40%,#ba995c 52%,#ba995c 61%,#d5bf6a 85%);
+	background: linear-gradient( 145deg, #d5bf6a 10%,#ffe2a9 40%,#ba995c 52%,#ba995c 61%,#d5bf6a 85%);
 }
 
 /*
@@ -202,7 +199,8 @@
 }
 */
 
-.playerAvatar.ignored {}
+.playerAvatar.ignored {
+}
 
 .playerAvatar img,
 .friend_block_holder .friend_block_avatar img,
@@ -221,8 +219,7 @@
 	z-index: 1;
 	pointer-events: none;
 }
-
-.playerAvatar .profile_avatar_frame>img {
+.playerAvatar .profile_avatar_frame > img {
 	transform: scale(1.23);
 	width: 32px;
 	height: 32px;
@@ -238,8 +235,7 @@
 	width: 64px;
 	height: 64px;
 }
-
-.playerAvatar.medium .profile_avatar_frame>img {
+.playerAvatar.medium .profile_avatar_frame > img {
 	width: 64px;
 	height: 64px;
 	transform: scale(1.225);
@@ -270,7 +266,7 @@
 	position: absolute;
 	left: 26px;
 	top: 23px;
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/friendindicator_small.png');
+	background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/friendindicator_small.png' );
 	width: 20px;
 	height: 20px;
 	z-index: 2;
@@ -278,52 +274,36 @@
 	cursor: pointer;
 }
 
-.persona,
-a.persona,
-.persona a,
-.friend_status_offline,
-.friend_status_offline div,
-.friend_status_offline a {
-	color: #898989;
+.persona, a.persona, .persona a,
+.friend_status_offline, .friend_status_offline div, .friend_status_offline a {
+	color:#898989;
 }
 
-.persona.online,
-a.persona.online,
-.persona.online a,
-.friend_status_online,
-.friend_status_online div,
-.friend_status_online a {
-	color: #57cbde;
+.persona.online, a.persona.online, .persona.online a,
+.friend_status_online, .friend_status_online div, .friend_status_online a {
+	color:#57cbde;
 }
 
-.persona.in-game,
-a.persona.in-game,
-.persona.in-game a,
-.friend_status_in-game,
-.friend_status_in-game div,
-.friend_status_in-game a {
-	color: #90ba3c;
+.persona.in-game, a.persona.in-game, .persona.in-game a,
+.friend_status_in-game, .friend_status_in-game div, .friend_status_in-game a {
+	color:#90ba3c;
 }
 
-.persona.golden,
-a.persona.golden,
-.persona.golden a,
-.friend_status_golden,
-.friend_status_golden div,
-.friend_status_golden a {
-	color: #e4ca63;
+.persona.golden, a.persona.golden, .persona.golden a,
+.friend_status_golden, .friend_status_golden div, .friend_status_golden a {
+	color:#e4ca63;
 }
 
 .border_color_offline {
-	border-color: #898989;
+	border-color:#898989;
 }
 
 .border_color_online {
-	border-color: #57cbde;
+	border-color:#57cbde;
 }
 
 .border_color_in-game {
-	border-color: #90ba3c;
+	border-color:#90ba3c;
 }
 
 .border_color_golden {
@@ -350,11 +330,10 @@ a.persona.golden,
 	overflow: hidden;
 
 	width: 328px;
-	font-family: "Motiva Sans", Sans-serif;
-	font-weight: normal;
-	/* normal */
+			font-family: "Motiva Sans", Sans-serif;
+		font-weight: normal; /* normal */
 
-}
+		}
 
 .miniprofile_playersection {
 	position: relative;
@@ -390,8 +369,7 @@ a.persona.golden,
 	left: 8px;
 	pointer-events: none;
 }
-
-.miniprofile_playersection .playersection_avatar_frame>img {
+.miniprofile_playersection .playersection_avatar_frame > img {
 	width: 100%;
 	height: 100%;
 	background: none;
@@ -452,7 +430,7 @@ a.persona.golden,
 .miniprofile_gamesection .miniprofile_game_details .game_state,
 .miniprofile_gamesection .miniprofile_game_details .rich_presence {
 	font-size: 12px;
-	color: rgb(98, 129, 59);
+	color: rgb( 98, 129, 59 );
 }
 
 .miniprofile_gamesection .miniprofile_game_details .miniprofile_game_name {
@@ -519,20 +497,20 @@ a.persona.golden,
 	left: 0;
 	overflow: hidden;
 	z-index: -3;
-	background: radial-gradient(ellipse farthest-corner at 20% 30%, rgb(76, 80, 91) 0%, rgb(52, 55, 63) 50%, rgb(40, 44, 50) 100%);
+	background: radial-gradient( ellipse farthest-corner at 20% 30%, rgb( 76, 80, 91 ) 0%, rgb( 52, 55, 63 ) 50%, rgb( 40, 44, 50 ) 100% );
 
 }
 
 .miniprofile_backgroundblur {
 	width: 380px;
 	height: 380px;
-	filter: blur(10px) saturate(2);
+	filter: blur( 10px ) saturate( 2 );
 	position: absolute;
 	left: -60px;
 	top: -60px;
 	opacity: 0.4;
-	-webkit-mask: radial-gradient(ellipse farthest-corner at 150px 150px, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3) 34%, rgba(0, 0, 0, 0) 64%);
-	mask: radial-gradient(ellipse farthest-corner at 150px 150px, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3) 34%, rgba(0, 0, 0, 0) 64%);
+	-webkit-mask: radial-gradient( ellipse farthest-corner at 150px 150px, rgba( 0, 0, 0, 1 ) 0%, rgba( 0, 0, 0, 0.6 ) 20%, rgba( 0, 0, 0, 0.3 ) 34%, rgba( 0, 0, 0, 0 ) 64% );
+	mask: radial-gradient( ellipse farthest-corner at 150px 150px, rgba( 0, 0, 0, 1 ) 0%, rgba( 0, 0, 0, 0.6 ) 20%, rgba( 0, 0, 0, 0.3 ) 34%, rgba( 0, 0, 0, 0 ) 64% );
 	mix-blend-mode: screen;
 }
 
@@ -542,7 +520,7 @@ a.persona.golden,
 }
 
 .miniprofile_backdrop {
-	background: linear-gradient(to bottom, rgba(24, 26, 30, .7) 5%, rgba(24, 26, 30, .4) 95%);
+	background: linear-gradient( to bottom, rgba( 24, 26, 30, .7 ) 5%, rgba( 24, 26, 30, .4 ) 95% );
 }
 
 .miniprofile_content {
@@ -579,49 +557,44 @@ a.persona.golden,
 .pulldown {
 	padding-left: 5px;
 	padding-right: 18px;
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png');
+	background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png' );
 	background-position: right center;
 	background-repeat: no-repeat;
 
 	cursor: pointer;
 }
-
 body.v6 .pulldown {
 	margin-right: 5px;
 }
-
 span.popup_menu_pulldown_indicator {
 	display: inline-block;
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down.png');
+	background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down.png' );
 	vertical-align: middle;
 	width: 9px;
 	height: 4px;
 }
-
 #admin_drop {
-	border-radius: 2px;
-	border: none;
-	padding: 1px;
-	display: inline-block;
-	cursor: pointer;
-	text-decoration: none !important;
-	color: #67c1f5 !important;
-	background: rgba(103, 193, 245, 0.2)
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #67c1f5 !important;
+    background: rgba( 103, 193, 245, 0.2 )
 }
-
 #admin_drop:hover {
-	text-decoration: none !important;
-	color: #fff !important;
-	background: #417a9b;
-	background: -webkit-linear-gradient(150deg, #417a9b 5%, #67c1f5 95%);
-	background: linear-gradient(-60deg, #417a9b 5%, #67c1f5 95%);
+    text-decoration: none !important;
+    color: #fff !important;
+    background: #417a9b;
+    background: -webkit-linear-gradient( 150deg, #417a9b 5%,#67c1f5 95%);
+    background: linear-gradient( -60deg, #417a9b 5%,#67c1f5 95%);
 }
-
 #admin_drop span {
-	padding: 0 22px 0 15px;
-	margin-right: 8px;
-	font-size: 15px;
-	line-height: 30px;
+    padding: 0 22px 0 15px;
+    margin-right: 8px;
+    font-size: 15px;
+    line-height: 30px;
 }
 
 
@@ -631,17 +604,20 @@ span.popup_menu_pulldown_indicator {
 	box-shadow: 0 0 12px #000000;
 }
 
-.popup_block_new.popup_block_hidden_until_visible {
+.popup_block_new.popup_block_hidden_until_visible
+{
 	opacity: 1.0;
 	transition: opacity 200ms;
 }
 
-.popup_block_new.popup_block_hidden_until_visible:not(.visible) {
+.popup_block_new.popup_block_hidden_until_visible:not(.visible)
+{
 	opacity: 0;
 	pointer-events: none;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 910px)
+{
 	html.responsive .popup_block_new.responsive_slidedown {
 		position: static;
 		box-shadow: none;
@@ -683,18 +659,18 @@ body.v6 .popup_block_new .popup_body.popup_menu {
 	padding: 5px 14px;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 910px)
+{
 	html.responsive .popup_menu .popup_menu_item {
 		font-size: 14px;
 		line-height: 18px;
 	}
 
 }
-
-html.responsive.touch .popup_menu .popup_menu_item {
-	font-size: 14px;
-	line-height: 18px;
-}
+	html.responsive.touch .popup_menu .popup_menu_item {
+		font-size: 14px;
+		line-height: 18px;
+	}
 
 .popup_menu a.popup_menu_item {
 	text-decoration: none;
@@ -704,8 +680,7 @@ html.responsive.touch .popup_menu .popup_menu_item {
 	cursor: default;
 }
 
-.popup_menu .popup_menu_item:hover,
-.popup_menu .popup_menu_item.focus {
+.popup_menu .popup_menu_item:hover, .popup_menu .popup_menu_item.focus {
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -718,8 +693,7 @@ html.responsive.touch .popup_menu .popup_menu_item {
 	cursor: default;
 }
 
-.popup_menu_item,
-.popup_menu_subheader {
+.popup_menu_item, .popup_menu_subheader {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -811,58 +785,33 @@ html.responsive.touch .popup_menu .popup_menu_item {
 	border-color: #997c52;
 }
 
-.friendPlayerLevel.lvl_100,
-.friendPlayerLevel.lvl_200,
-.friendPlayerLevel.lvl_300,
-.friendPlayerLevel.lvl_400,
-.friendPlayerLevel.lvl_500,
-.friendPlayerLevel.lvl_600,
-.friendPlayerLevel.lvl_700,
-.friendPlayerLevel.lvl_800,
-.friendPlayerLevel.lvl_900,
-.friendPlayerLevel.lvl_1000,
-.friendPlayerLevel.lvl_1100,
-.friendPlayerLevel.lvl_1200,
-.friendPlayerLevel.lvl_1300,
-.friendPlayerLevel.lvl_1400,
-.friendPlayerLevel.lvl_1500,
-.friendPlayerLevel.lvl_1600,
-.friendPlayerLevel.lvl_1700,
-.friendPlayerLevel.lvl_1800,
-.friendPlayerLevel.lvl_1900,
-.friendPlayerLevel.lvl_2000,
-.friendPlayerLevel.lvl_2100,
-.friendPlayerLevel.lvl_2200,
-.friendPlayerLevel.lvl_2300,
-.friendPlayerLevel.lvl_2400,
-.friendPlayerLevel.lvl_2500,
-.friendPlayerLevel.lvl_2600,
-.friendPlayerLevel.lvl_2700,
-.friendPlayerLevel.lvl_2800,
-.friendPlayerLevel.lvl_2900,
-.friendPlayerLevel.lvl_3000,
-.friendPlayerLevel.lvl_3100,
-.friendPlayerLevel.lvl_3200,
-.friendPlayerLevel.lvl_3300,
-.friendPlayerLevel.lvl_3400,
-.friendPlayerLevel.lvl_3500,
-.friendPlayerLevel.lvl_3600,
-.friendPlayerLevel.lvl_3700,
-.friendPlayerLevel.lvl_3800,
-.friendPlayerLevel.lvl_3900,
-.friendPlayerLevel.lvl_4000,
-.friendPlayerLevel.lvl_4100,
-.friendPlayerLevel.lvl_4200,
-.friendPlayerLevel.lvl_4300,
-.friendPlayerLevel.lvl_4400,
-.friendPlayerLevel.lvl_4500,
-.friendPlayerLevel.lvl_4600,
-.friendPlayerLevel.lvl_4700,
-.friendPlayerLevel.lvl_4800,
-.friendPlayerLevel.lvl_4900,
-.friendPlayerLevel.lvl_5000,
-.friendPlayerLevel.lvl_5100,
-.friendPlayerLevel.lvl_5200 {
+.friendPlayerLevel.lvl_100, .friendPlayerLevel.lvl_200,
+	.friendPlayerLevel.lvl_300, .friendPlayerLevel.lvl_400,
+	.friendPlayerLevel.lvl_500, .friendPlayerLevel.lvl_600,
+	.friendPlayerLevel.lvl_700, .friendPlayerLevel.lvl_800,
+	.friendPlayerLevel.lvl_900, .friendPlayerLevel.lvl_1000,
+	.friendPlayerLevel.lvl_1100, .friendPlayerLevel.lvl_1200,
+	.friendPlayerLevel.lvl_1300, .friendPlayerLevel.lvl_1400,
+	.friendPlayerLevel.lvl_1500, .friendPlayerLevel.lvl_1600,
+	.friendPlayerLevel.lvl_1700, .friendPlayerLevel.lvl_1800,
+	.friendPlayerLevel.lvl_1900, .friendPlayerLevel.lvl_2000,
+	.friendPlayerLevel.lvl_2100, .friendPlayerLevel.lvl_2200,
+	.friendPlayerLevel.lvl_2300, .friendPlayerLevel.lvl_2400,
+	.friendPlayerLevel.lvl_2500, .friendPlayerLevel.lvl_2600,
+	.friendPlayerLevel.lvl_2700, .friendPlayerLevel.lvl_2800,
+	.friendPlayerLevel.lvl_2900, .friendPlayerLevel.lvl_3000,
+	.friendPlayerLevel.lvl_3100, .friendPlayerLevel.lvl_3200,
+	.friendPlayerLevel.lvl_3300, .friendPlayerLevel.lvl_3400,
+	.friendPlayerLevel.lvl_3500, .friendPlayerLevel.lvl_3600,
+	.friendPlayerLevel.lvl_3700, .friendPlayerLevel.lvl_3800,
+	.friendPlayerLevel.lvl_3900, .friendPlayerLevel.lvl_4000,
+	.friendPlayerLevel.lvl_4100, .friendPlayerLevel.lvl_4200,
+	.friendPlayerLevel.lvl_4300, .friendPlayerLevel.lvl_4400,
+	.friendPlayerLevel.lvl_4500, .friendPlayerLevel.lvl_4600,
+	.friendPlayerLevel.lvl_4700, .friendPlayerLevel.lvl_4800,
+	.friendPlayerLevel.lvl_4900, .friendPlayerLevel.lvl_5000,
+    .friendPlayerLevel.lvl_5100, .friendPlayerLevel.lvl_5200
+{
 	border: none;
 	border-radius: 0;
 	background-repeat: no-repeat;
@@ -876,246 +825,83 @@ html.responsive.touch .popup_menu .popup_menu_item {
 	text-shadow: 1px 1px #1a1a1a;
 }
 
-.friendPlayerLevel.lvl_100 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_hexagons.png');
-}
-
-.friendPlayerLevel.lvl_200 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_shields.png');
-}
-
-.friendPlayerLevel.lvl_300 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_books.png');
-}
-
-.friendPlayerLevel.lvl_400 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_chevrons.png');
-}
-
-.friendPlayerLevel.lvl_500 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_circle2.png');
-}
-
-.friendPlayerLevel.lvl_600 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_angle.png');
-}
-
-.friendPlayerLevel.lvl_700 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_flag.png');
-}
-
-.friendPlayerLevel.lvl_800 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_wings.png');
-}
-
-.friendPlayerLevel.lvl_900 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_arrows.png');
-}
-
-.friendPlayerLevel.lvl_1000 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_crystals.png');
-}
-
-.friendPlayerLevel.lvl_1100 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_space.png');
-}
-
-.friendPlayerLevel.lvl_1200 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_waterelement.png');
-}
-
-.friendPlayerLevel.lvl_1300 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_fireelement.png');
-}
-
-.friendPlayerLevel.lvl_1400 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_earthelement.png');
-}
-
-.friendPlayerLevel.lvl_1500 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_airelement_1-2.png');
-}
-
-.friendPlayerLevel.lvl_1600 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_airelement_3-4.png');
-}
-
-.friendPlayerLevel.lvl_1700 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_airelement_5-6.png');
-}
-
-.friendPlayerLevel.lvl_1800 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_airelement_7-8.png');
-}
-
-.friendPlayerLevel.lvl_1900 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_airelement_9-10.png');
-}
-
-.friendPlayerLevel.lvl_2000 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_geo_1-2.png?v=2');
-}
-
-.friendPlayerLevel.lvl_2100 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_geo_3-4.png?v=2');
-}
-
-.friendPlayerLevel.lvl_2200 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_geo_5-6.png?v=2');
-}
-
-.friendPlayerLevel.lvl_2300 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_geo_7-8.png?v=2');
-}
-
-.friendPlayerLevel.lvl_2400 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_geo_9-10.png?v=2');
-}
-
-.friendPlayerLevel.lvl_2500 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_mandala_1-2.png?v=2');
-}
-
-.friendPlayerLevel.lvl_2600 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_mandala_3-4.png?v=2');
-}
-
-.friendPlayerLevel.lvl_2700 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_mandala_5-6.png?v=2');
-}
-
-.friendPlayerLevel.lvl_2800 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_mandala_7-8.png?v=2');
-}
-
-.friendPlayerLevel.lvl_2900 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_mandala_9-10.png?v=2');
-}
-
-.friendPlayerLevel.lvl_3000 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_spiro_1-2.png?v=2');
-}
-
-.friendPlayerLevel.lvl_3100 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_spiro_3-4.png?v=2');
-}
-
-.friendPlayerLevel.lvl_3200 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_spiro_5-6.png?v=2');
-}
-
-.friendPlayerLevel.lvl_3300 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_spiro_7-8.png?v=2');
-}
-
-.friendPlayerLevel.lvl_3400 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_spiro_9-10.png?v=2');
-}
-
-.friendPlayerLevel.lvl_3500 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_patterns_1-2.png?v=2');
-}
-
-.friendPlayerLevel.lvl_3600 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_patterns_3-4.png?v=2');
-}
-
-.friendPlayerLevel.lvl_3700 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_patterns_5-6.png?v=2');
-}
-
-.friendPlayerLevel.lvl_3800 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_patterns_7-8.png?v=2');
-}
-
-.friendPlayerLevel.lvl_3900 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_patterns_9-10.png?v=2');
-}
-
-.friendPlayerLevel.lvl_4000 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_shapes_1.png?v=2');
-}
-
-.friendPlayerLevel.lvl_4100 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_shapes_2.png?v=2');
-}
-
-.friendPlayerLevel.lvl_4200 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_shapes_3.png?v=2');
-}
-
-.friendPlayerLevel.lvl_4300 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_shapes_4.png?v=2');
-}
-
-.friendPlayerLevel.lvl_4400 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_shapes_5.png?v=2');
-}
-
-.friendPlayerLevel.lvl_4500 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_grunge_1.png?v=2');
-}
-
-.friendPlayerLevel.lvl_4600 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_grunge_2.png?v=2');
-}
-
-.friendPlayerLevel.lvl_4700 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_grunge_3.png?v=2');
-}
-
-.friendPlayerLevel.lvl_4800 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_grunge_4.png?v=2');
-}
-
-.friendPlayerLevel.lvl_4900 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_grunge_5.png?v=2');
-}
-
-.friendPlayerLevel.lvl_5000 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_halftone_1.png?v=2');
-}
-
-.friendPlayerLevel.lvl_5100 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_halftone_2.png?v=2');
-}
-
-.friendPlayerLevel.lvl_5200 {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/community/levels_halftone_3.png?v=2');
-}
+.friendPlayerLevel.lvl_100 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_hexagons.png' ); }
+.friendPlayerLevel.lvl_200 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_shields.png' ); }
+.friendPlayerLevel.lvl_300 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_books.png' );  }
+.friendPlayerLevel.lvl_400 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_chevrons.png' );  }
+.friendPlayerLevel.lvl_500 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_circle2.png' );  }
+.friendPlayerLevel.lvl_600 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_angle.png' );  }
+.friendPlayerLevel.lvl_700 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_flag.png' );  }
+.friendPlayerLevel.lvl_800 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_wings.png' );  }
+.friendPlayerLevel.lvl_900 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_arrows.png' );  }
+.friendPlayerLevel.lvl_1000 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_crystals.png' );  }
+.friendPlayerLevel.lvl_1100 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_space.png' );  }
+.friendPlayerLevel.lvl_1200 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_waterelement.png' );  }
+.friendPlayerLevel.lvl_1300 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_fireelement.png' );  }
+.friendPlayerLevel.lvl_1400 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_earthelement.png' );  }
+.friendPlayerLevel.lvl_1500 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_airelement_1-2.png' );  }
+.friendPlayerLevel.lvl_1600 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_airelement_3-4.png' );  }
+.friendPlayerLevel.lvl_1700 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_airelement_5-6.png' );  }
+.friendPlayerLevel.lvl_1800 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_airelement_7-8.png' );  }
+.friendPlayerLevel.lvl_1900 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_airelement_9-10.png' );  }
+.friendPlayerLevel.lvl_2000 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_geo_1-2.png?v=2' );  }
+.friendPlayerLevel.lvl_2100 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_geo_3-4.png?v=2' );  }
+.friendPlayerLevel.lvl_2200 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_geo_5-6.png?v=2' );  }
+.friendPlayerLevel.lvl_2300 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_geo_7-8.png?v=2' );  }
+.friendPlayerLevel.lvl_2400 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_geo_9-10.png?v=2' );  }
+.friendPlayerLevel.lvl_2500 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_mandala_1-2.png?v=2' );  }
+.friendPlayerLevel.lvl_2600 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_mandala_3-4.png?v=2' );  }
+.friendPlayerLevel.lvl_2700 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_mandala_5-6.png?v=2' );  }
+.friendPlayerLevel.lvl_2800 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_mandala_7-8.png?v=2' );  }
+.friendPlayerLevel.lvl_2900 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_mandala_9-10.png?v=2' );  }
+.friendPlayerLevel.lvl_3000 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_spiro_1-2.png?v=2' );  }
+.friendPlayerLevel.lvl_3100 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_spiro_3-4.png?v=2' );  }
+.friendPlayerLevel.lvl_3200 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_spiro_5-6.png?v=2' );  }
+.friendPlayerLevel.lvl_3300 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_spiro_7-8.png?v=2' );  }
+.friendPlayerLevel.lvl_3400 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_spiro_9-10.png?v=2' );  }
+.friendPlayerLevel.lvl_3500 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_patterns_1-2.png?v=2' );  }
+.friendPlayerLevel.lvl_3600 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_patterns_3-4.png?v=2' );  }
+.friendPlayerLevel.lvl_3700 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_patterns_5-6.png?v=2' );  }
+.friendPlayerLevel.lvl_3800 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_patterns_7-8.png?v=2' );  }
+.friendPlayerLevel.lvl_3900 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_patterns_9-10.png?v=2' );  }
+.friendPlayerLevel.lvl_4000 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_shapes_1.png?v=2' );  }
+.friendPlayerLevel.lvl_4100 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_shapes_2.png?v=2' );  }
+.friendPlayerLevel.lvl_4200 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_shapes_3.png?v=2' );  }
+.friendPlayerLevel.lvl_4300 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_shapes_4.png?v=2' );  }
+.friendPlayerLevel.lvl_4400 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_shapes_5.png?v=2' );  }
+.friendPlayerLevel.lvl_4500 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_grunge_1.png?v=2' );  }
+.friendPlayerLevel.lvl_4600 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_grunge_2.png?v=2' );  }
+.friendPlayerLevel.lvl_4700 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_grunge_3.png?v=2' );  }
+.friendPlayerLevel.lvl_4800 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_grunge_4.png?v=2' );  }
+.friendPlayerLevel.lvl_4900 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_grunge_5.png?v=2' );  }
+.friendPlayerLevel.lvl_5000 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_halftone_1.png?v=2' );  }
+.friendPlayerLevel.lvl_5100 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_halftone_2.png?v=2' );  }
+.friendPlayerLevel.lvl_5200 { background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/community/levels_halftone_3.png?v=2' );  }
 
 .friendPlayerLevel.lvl_plus_10 {
 	background-position: 0 -32px;
 }
-
 .friendPlayerLevel.lvl_plus_20 {
 	background-position: 0 -64px;
 }
-
 .friendPlayerLevel.lvl_plus_30 {
 	background-position: 0 -96px;
 }
-
 .friendPlayerLevel.lvl_plus_40 {
 	background-position: 0 -128px;
 }
-
 .friendPlayerLevel.lvl_plus_50 {
 	background-position: 0 -160px;
 }
-
 .friendPlayerLevel.lvl_plus_60 {
 	background-position: 0 -192px;
 }
-
 .friendPlayerLevel.lvl_plus_70 {
 	background-position: 0 -224px;
 }
-
 .friendPlayerLevel.lvl_plus_80 {
 	background-position: 0 -256px;
 }
-
 .friendPlayerLevel.lvl_plus_90 {
 	background-position: 0 -288px;
 }
@@ -1123,14 +909,12 @@ html.responsive.touch .popup_menu .popup_menu_item {
 
 
 .newmodal {
-	font-family: "Motiva Sans", Sans-serif;
-	font-weight: normal;
-	/* normal */
+			font-family: "Motiva Sans", Sans-serif;
+		font-weight: normal; /* normal */
 
-	position: absolute;
+			position: absolute;
 
-	max-width: 900px;
-	/* our page width */
+	max-width: 900px;	/* our page width */
 	min-width: 500px;
 
 	background: radial-gradient(circle at top left, rgba(74, 81, 92, 0.4) 0%, rgba(75, 81, 92, 0) 60%), #25282e;
@@ -1150,20 +934,17 @@ html.responsive.touch .popup_menu .popup_menu_item {
 	padding: 32px 32px 0px 32px;
 	display: block;
 }
-
 .newmodal_header .subtitle_text {
-	font-family: "Motiva Sans", Sans-serif;
-	font-weight: 200;
-	/* thin */
+		font-family: "Motiva Sans", Sans-serif;
+		font-weight: 200; /* thin */
 
-	font-size: 19px;
-	text-transform: none;
-	line-height: 20px;
-	letter-spacing: 0px;
-	padding: 0px 32px 0px 32px;
-	display: block;
+		    font-size: 19px;
+    text-transform: none;
+    line-height: 20px;
+    letter-spacing: 0px;
+    padding: 0px 32px 0px 32px;
+    display: block;
 }
-
 .modal_top_bar {
 	width: 100%;
 	height: 1px;
@@ -1182,21 +963,20 @@ html.responsive.touch .popup_menu .popup_menu_item {
 	text-transform: uppercase;
 	flex-shrink: 0;
 }
+@media screen and (max-width: 910px)
+{
+    html.responsive .newmodal_header .title_text {
+        padding: 32px 15px 0px 15px;
+    }
+    html.responsive .newmodal_content {
 
-@media screen and (max-width: 910px) {
-	html.responsive .newmodal_header .title_text {
-		padding: 32px 15px 0px 15px;
-	}
-
-	html.responsive .newmodal_content {
-
-		max-width: 646px;
-		min-width: 280px;
-	}
+        max-width: 646px;
+        min-width: 280px;
+    }
 }
 
 .newmodal_close {
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVBREZBRDlBNzdCNzExRTI5ODAzRUE3MDU0Mzk5MjM5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVBREZBRDlCNzdCNzExRTI5ODAzRUE3MDU0Mzk5MjM5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUFERkFEOTg3N0I3MTFFMjk4MDNFQTcwNTQzOTkyMzkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUFERkFEOTk3N0I3MTFFMjk4MDNFQTcwNTQzOTkyMzkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4iulRzAAABPElEQVR42mI8cuQIAyWABUqbAXEylH0fiDtwqI8FYhsoewEQH4cZcBaI64DYG8p/AVWADDyAeD4QMwPxJiA+BRJkgkr+BeJoIL4D5U8DYi0kzepAvAKq+TJU7V9kA0DgIxD7Q2lOIF4NpfmBeAuUfg3EPkD8BaaJCc2Z14A4EcoGuWAC1NkqQPwLqvkRsgYmLAG1HoiboOw0IA6EshNh/iZkAAjUA/FBJP5KIF6GTSEuAwygUQsDflAxogwQAuJ10AAExcpNKHsjEIsSMoAZGl2K0EALBeIIKFsOKSpxGtACxK5Qdi4QX4DiAqiYExB34TIgBIgrkAJtFpLcdKgYCBQBcRRMghGamUBxfhKIeaB+NkFOLFAAkjsDTZXfgdgK5DpYXvBGiqYpWDQzQMVAYZKDlDcuMFKanQECDAAqw0LA+GRiqAAAAABJRU5ErkJggg== );
+	background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVBREZBRDlBNzdCNzExRTI5ODAzRUE3MDU0Mzk5MjM5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVBREZBRDlCNzdCNzExRTI5ODAzRUE3MDU0Mzk5MjM5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUFERkFEOTg3N0I3MTFFMjk4MDNFQTcwNTQzOTkyMzkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUFERkFEOTk3N0I3MTFFMjk4MDNFQTcwNTQzOTkyMzkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4iulRzAAABPElEQVR42mI8cuQIAyWABUqbAXEylH0fiDtwqI8FYhsoewEQH4cZcBaI64DYG8p/AVWADDyAeD4QMwPxJiA+BRJkgkr+BeJoIL4D5U8DYi0kzepAvAKq+TJU7V9kA0DgIxD7Q2lOIF4NpfmBeAuUfg3EPkD8BaaJCc2Z14A4EcoGuWAC1NkqQPwLqvkRsgYmLAG1HoiboOw0IA6EshNh/iZkAAjUA/FBJP5KIF6GTSEuAwygUQsDflAxogwQAuJ10AAExcpNKHsjEIsSMoAZGl2K0EALBeIIKFsOKSpxGtACxK5Qdi4QX4DiAqiYExB34TIgBIgrkAJtFpLcdKgYCBQBcRRMghGamUBxfhKIeaB+NkFOLFAAkjsDTZXfgdgK5DpYXvBGiqYpWDQzQMVAYZKDlDcuMFKanQECDAAqw0LA+GRiqAAAAABJRU5ErkJggg== );
 	background-repeat: no-repeat;
 	background-position: center right;
 	cursor: pointer;
@@ -1223,17 +1003,17 @@ html.responsive.touch .popup_menu .popup_menu_item {
 }
 
 #ShareModal {
-	width: 290px;
+    width: 290px;
 }
 
 .newmodal_content_border {
 	padding: 0 1px 1px 1px;
-	display: flex;
+    display: flex;
 }
 
 .newmodal_content {
 
-	width: 100%;
+    width: 100%;
 	overflow: auto;
 	word-wrap: break-word;
 
@@ -1266,7 +1046,8 @@ html.responsive.touch .popup_menu .popup_menu_item {
 	margin-bottom: 8px;
 }
 
-.newmodal_prompt_input {}
+.newmodal_prompt_input {
+}
 
 .newmodal_prompt_input input[type=text] {
 	width: 100%;
@@ -1283,27 +1064,24 @@ html.responsive.touch .popup_menu .popup_menu_item {
 	width: 500px;
 }
 
-.gray_bevel input,
-.gray_bevel textarea {
+.gray_bevel input, .gray_bevel textarea {
 	border: none;
 	outline: none;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0,0,0,0.2);
 	border: 1px solid #000;
-	box-shadow: 1px 1px 0 0 rgba(91, 132, 181, 0.2);
+	box-shadow: 1px 1px 0 0 rgba( 91, 132, 181, 0.2 );
 	font-size: 13px;
 	color: #BFBFBF;
 }
 
-.gray_bevel input:-moz-read-only,
-.gray_bevel textarea:-moz-read-only {
+.gray_bevel input:-moz-read-only, .gray_bevel textarea:-moz-read-only {
 	background: transparent;
 	border: transparent;
 	box-shadow: none;
 	color: #919191;
 }
 
-.gray_bevel input:read-only,
-.gray_bevel textarea:read-only {
+.gray_bevel input:read-only, .gray_bevel textarea:read-only {
 	background: transparent;
 	border: transparent;
 	box-shadow: none;
@@ -1314,8 +1092,7 @@ html.responsive.touch .popup_menu .popup_menu_item {
 	display: block;
 }
 
-.gray_bevel.fullwidth.for_text_input input,
-.gray_bevel.fullwidth textarea {
+.gray_bevel.fullwidth.for_text_input input, .gray_bevel.fullwidth textarea {
 	/* narrow a bit to account for padding in the text area */
 	width: calc(100% - 8px);
 }
@@ -1324,8 +1101,7 @@ input.gray_bevel {
 	height: 20px;
 }
 
-textarea.gray_bevel,
-.gray_bevel textarea {
+textarea.gray_bevel, .gray_bevel textarea {
 	resize: none;
 }
 
@@ -1346,21 +1122,23 @@ select.gray_bevel {
 }
 
 select.blueish {
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba( 255, 255, 255, 0.7 );
 	color: #000;
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba( 255, 255, 255, 0.1 );
 	border-radius: 3px;
 	box-shadow: 1px 1px 0px #000;
 }
 
-.waiting_dialog_container {
+.waiting_dialog_container
+{
 	line-height: 32px;
 }
 
-.waiting_dialog_throbber {
+.waiting_dialog_throbber
+{
 	width: 32px;
 	height: 32px;
-	background: url('https://community.akamai.steamstatic.com/public/images/login/throbber.gif') center center no-repeat;
+	background: url( 'https://community.akamai.steamstatic.com/public/images/login/throbber.gif' ) center center no-repeat;
 	margin-right: 5px;
 	float: left;
 }
@@ -1413,7 +1191,7 @@ select.blueish {
 .emoticon_hover_arrow {
 	width: 13px;
 	height: 26px;
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/popups/hover_arrow_both.gif');
+	background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/popups/hover_arrow_both.gif' );
 	background-repeat: no-repeat;
 
 	position: absolute;
@@ -1440,11 +1218,7 @@ select.blueish {
 
 /* apply 16px padding to the sides of all the page-wide divs to prevent content
 	from touching the sides on small resolutions */
-div#footer,
-div#global_header,
-div#store_header,
-div#main,
-div.page_area {
+div#footer, div#global_header, div#store_header, div#main, div.page_area {
 	padding-left: 16px;
 	padding-right: 16px;
 }
@@ -1460,14 +1234,14 @@ div#global_header {
 	background-position: center top;
 	min-width: 940px;
 
-	font-family: "Motiva Sans", Sans-serif;
-	font-weight: normal;
-	/* normal */
+			font-family: "Motiva Sans", Sans-serif;
+		font-weight: normal; /* normal */
 
-	font-size: 14px;
+			font-size: 14px;
 }
 
-.partner_events div#global_header {
+.partner_events div#global_header
+{
 	position: relative;
 	z-index: 151;
 }
@@ -1500,13 +1274,11 @@ div#global_actions a.global_action_link {
 	padding: 0 4px;
 }
 
-div#global_actions a.global_action_link,
-div.admin_actions a.global_action_link {
+div#global_actions a.global_action_link, div.admin_actions a.global_action_link {
 	color: #b8b6b4;
 }
 
-div#global_actions .global_action_link:hover,
-div.admin_actions .global_action_link:hover {
+div#global_actions .global_action_link:hover, div.admin_actions .global_action_link:hover {
 	text-decoration: none;
 	color: #ffffff;
 }
@@ -1526,7 +1298,7 @@ div#global_actions #global_action_menu {
 	display: inline-block;
 }
 
-#global_action_menu>* {
+#global_action_menu > * {
 	vertical-align: top;
 }
 
@@ -1559,14 +1331,13 @@ div#global_header .menuitem {
 	text-transform: uppercase;
 }
 
-div#global_header .menuitem.active,
-div#global_header .menuitem:hover {
+div#global_header .menuitem.active, div#global_header .menuitem:hover {
 	color: #ffffff;
 	text-decoration: none;
 }
 
 div#global_header .menuitem.active {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/header/globalheader_highlight.png');
+	background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/header/globalheader_highlight.png' );
 	background-repeat: repeat-x;
 }
 
@@ -1584,19 +1355,17 @@ div#global_header .activebg {
 	line-height: normal;
 }
 
-#language_pulldown,
-#account_pulldown {
+#language_pulldown, #account_pulldown {
 	display: inline-block;
 	padding-left: 4px;
 	line-height: 25px;
 }
 
-#language_pulldown.focus,
-#account_pulldown.focus {
+#language_pulldown.focus, #account_pulldown.focus {
 	color: #ffffff;
 }
 
-#account_dropdown>.popup_body {
+#account_dropdown > .popup_body {
 	width: 150px;
 }
 
@@ -1608,15 +1377,11 @@ div#global_header .activebg {
 	margin-right: 3px;
 }
 
-.header_installsteam_btn_green .header_installsteam_btn_leftcap,
-.header_installsteam_btn_green .header_installsteam_btn_rightcap,
-.header_installsteam_btn_green .header_installsteam_btn_content {
+.header_installsteam_btn_green .header_installsteam_btn_leftcap, .header_installsteam_btn_green .header_installsteam_btn_rightcap, .header_installsteam_btn_green .header_installsteam_btn_content {
 	background-color: #5c7e10;
 }
 
-.header_installsteam_btn_gray .header_installsteam_btn_leftcap,
-.header_installsteam_btn_gray .header_installsteam_btn_rightcap,
-.header_installsteam_btn_gray .header_installsteam_btn_content {
+.header_installsteam_btn_gray .header_installsteam_btn_leftcap, .header_installsteam_btn_gray .header_installsteam_btn_rightcap, .header_installsteam_btn_gray .header_installsteam_btn_content {
 	background-color: #616a72;
 }
 
@@ -1626,8 +1391,8 @@ div#global_header .activebg {
 	padding-right: 9px;
 	background-position: 10px 5px;
 
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1');
-	background-repeat: no-repeat;
+	background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1' );
+	background-repeat:	no-repeat;
 	text-decoration: none;
 	color: #e5e4dc;
 	font-weight: normal;
@@ -1658,11 +1423,10 @@ a.global_header_toggle_button:hover {
 	color: #ffffff;
 	font-weight: normal;
 	font-size: 12px;
-	font-family: "Motiva Sans", Sans-serif;
-	font-weight: bold;
-	/* bold */
+			font-family: "Motiva Sans", Sans-serif;
+		font-weight: bold; /* bold */
 
-}
+		}
 
 .global_header_toggle_button.green,
 .global_header_toggle_button.has_notifications {
@@ -1704,14 +1468,16 @@ a.global_header_account_alert:hover {
 }
 
 
-div#global_header .menuitem_new {
+div#global_header .menuitem_new
+{
 	position: absolute;
 	top: 27px;
 	font-size: 11px;
 	color: #85b0df
 }
 
-div#global_header .submenuitem {
+div#global_header .submenuitem
+{
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 11px;
@@ -1719,22 +1485,24 @@ div#global_header .submenuitem {
 	padding-right: 10px;
 }
 
-div#global_header .submenuitem.active,
-div#global_header .submenuitem:hover {
+div#global_header .submenuitem.active, div#global_header .submenuitem:hover
+{
 	text-decoration: none;
 	color: #ffffff;
 }
 
-div#global_header .submenuitem.moderator {
+div#global_header .submenuitem.moderator
+{
 	color: #b80000;
 }
 
-div#global_header .submenuitem.active.moderator,
-div#global_header .submenuitem.moderator:hover {
+div#global_header .submenuitem.active.moderator, div#global_header .submenuitem.moderator:hover
+{
 	color: #ff0000;
 }
 
-.community_sub_nav {
+.community_sub_nav
+{
 	position: absolute;
 	left: 7px;
 	top: 65px;
@@ -1776,11 +1544,10 @@ div#global_header .submenuitem.moderator:hover {
 }
 
 /* -------------- paging controls -------------*/
-.pagebtn,
-a.pagebtn {
+.pagebtn, a.pagebtn {
 	display: inline-block;
 	line-height: 24px;
-	background-color: rgba(103, 193, 245, 0.2);
+	background-color: rgba( 103, 193, 245, 0.2 );
 	border: 1px transparent;
 	border-radius: 3px;
 	cursor: pointer;
@@ -1788,18 +1555,14 @@ a.pagebtn {
 	color: #66c0f4;
 }
 
-.pagebtn:not(.disabled):hover,
-a.pagebtn:not(.disabled):hover {
+.pagebtn:not(.disabled):hover, a.pagebtn:not(.disabled):hover {
 	background-color: #66c0f4;
 	border-color: #66c0f4;
 	color: #fff;
 	text-decoration: none;
 }
 
-.pagebtn.disabled,
-.pagebtn.disabled:hover,
-a.pagebtn.disabled,
-a.pagebtn.disabled:hover {
+.pagebtn.disabled, .pagebtn.disabled:hover, a.pagebtn.disabled, a.pagebtn.disabled:hover {
 	cursor: default;
 	opacity: 0.2;
 }
@@ -1831,7 +1594,8 @@ a.pagelink:hover {
 	display: none;
 }
 
-.header_notification_btn.has_notifications {}
+.header_notification_btn.has_notifications {
+}
 
 #header_notification_dropdown .popup_menu {
 	padding: 2px;
@@ -1874,7 +1638,7 @@ a.pagelink:hover {
 	position: relative;
 	top: -2px;
 
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/header/inbox_icons_sprite.png');
+	background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/header/inbox_icons_sprite.png' );
 }
 
 .header_notification_comments .notification_icon {
@@ -1899,27 +1663,27 @@ a.pagelink:hover {
 
 /* these are shown conditionally so not a big deal that they aren't in the sprite */
 .header_notification_tradeoffers .notification_icon {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/header/inbox_tradeoffers.png');
+	background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/header/inbox_tradeoffers.png' );
 }
 
 .header_notification_asyncgame .notification_icon {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/header/inbox_async_game.png');
+	background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/header/inbox_async_game.png' );
 }
 
 .header_notification_asyncgameinvite .notification_icon {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/header/inbox_async_game_invite.png');
+	background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/header/inbox_async_game_invite.png' );
 }
 
 /* re-uses comment icon */
 .header_notification_moderatormessage .notification_icon,
 .header_notification_helprequestreply .notification_icon {
-	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/header/inbox_moderator_message.png');
+	background-image: url( 'https://community.akamai.steamstatic.com/public/shared/images/header/inbox_moderator_message.png' );
 }
 
 .header_parental_btn {
 	padding: 0 12px;
 	width: 23px;
-	background-image: url('data:image/png;base64,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');
+	background-image: url( 'data:image/png;base64,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' );
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -1932,13 +1696,11 @@ a.pagelink:hover {
 	cursor: pointer;
 }
 
-#header_parental_link.header_parental_locked:hover,
-.header_parental_locked.focus {
+#header_parental_link.header_parental_locked:hover, .header_parental_locked.focus {
 	background-position: 0 -86px;
 }
 
-#header_parental_link.header_parental_unlocked:hover,
-.header_parental_unlocked:focus {
+#header_parental_link.header_parental_unlocked:hover, .header_parental_unlocked:focus {
 	background-position: 0 -28px;
 }
 
@@ -1954,8 +1716,8 @@ a.pagelink:hover {
 .dynamiclink_box {
 	position: relative;
 	font-family: Helvetica, Arial, sans-serif;
-	background: -webkit-linear-gradient(30deg, rgba(87, 92, 104, 0.3) 5%, rgba(255, 255, 255, 0.05) 95%);
-	background: linear-gradient(60deg, rgba(87, 92, 104, 0.3) 5%, rgba(255, 255, 255, 0.05) 95%);
+background: -webkit-linear-gradient( 30deg, rgba(87, 92, 104, 0.3) 5%,rgba(255,255,255,0.05) 95%);
+	background: linear-gradient( 60deg, rgba(87, 92, 104, 0.3) 5%,rgba(255,255,255,0.05) 95%);
 	border-radius: 6px;
 	padding: 8px;
 	margin: 10px 0px 10px 0px;
@@ -1969,7 +1731,8 @@ a.dynamiclink_box {
 	text-decoration: none !important;
 }
 
-.dynamiclink_box.noPopup {
+.dynamiclink_box.noPopup
+{
 	cursor: default;
 }
 
@@ -1987,94 +1750,76 @@ img.dynamiclink_preview {
 	max-height: 88px;
 	max-width: 75%;
 }
-
 .dynamiclink_content {
-	font-family: "Motiva Sans", Sans-serif;
-	font-weight: 300;
-	/* light */
+			font-family: "Motiva Sans", Sans-serif;
+		font-weight: 300; /* light */
 
-	color: rgb(192, 192, 192);
-	text-shadow: 0 0 16px rgb(0, 0, 0);
+			color: rgb( 192, 192, 192 );
+	text-shadow: 0 0 16px rgb( 0, 0, 0 );
 	font-size: 13px;
 	line-height: normal;
 	text-align: left;
 	display: flow-root;
 }
-
 .dynamiclink_name {
 	font-size: 15px;
 	color: #aad8ec;
-	font-family: "Motiva Sans", Sans-serif;
-	font-weight: 300;
-	/* light */
+			font-family: "Motiva Sans", Sans-serif;
+		font-weight: 300; /* light */
 
-	border-bottom: 1px dotted rgba(109, 207, 246, .6);
+			border-bottom: 1px dotted rgba( 109, 207, 246, .6 );
 	padding-bottom: 0px;
 	display: inline-block;
 	margin-bottom: 6px;
 }
-
 .dynamiclink_name .dynamiclink_type {
 	color: #c6d4df;
 }
-
 .dynamiclink_type {
 	color: #c6d4df;
 }
-
-.dynamiclink_type a {
-	color: #c6d4df;
-	text-decoration: underline;
-}
-
-.dynamiclink_type a:hover {
-	color: #ffffff;
-	text-decoration: underline;
-}
-
+	.dynamiclink_type a {
+		color: #c6d4df;
+		text-decoration: underline;
+	}
+	.dynamiclink_type a:hover {
+		color: #ffffff;
+		text-decoration: underline;
+	}
 .dynamiclink_author {
 	min-height: 16px;
 	font-size: 12px;
 	color: #95a6b2;
 	margin-bottom: 4px;
 }
-
-.dynamiclink_author a {
-	color: #c6d4df;
-	text-decoration: underline;
-}
-
-.dynamiclink_author a:hover {
-	color: #ffffff;
-	text-decoration: underline;
-}
-
-.dynamiclink_author span {
-	color: #809fb7;
-}
-
-.dynamiclink_author img.app_icon {
-	vertical-align: top;
-	padding-right: 5px;
-	height: 16px;
-}
-
+	.dynamiclink_author a {
+		color: #c6d4df;
+		text-decoration: underline;
+	}
+	.dynamiclink_author a:hover {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+	.dynamiclink_author span {
+		color: #809fb7;
+	}
+	.dynamiclink_author img.app_icon {
+		vertical-align: top;
+		padding-right: 5px;
+		height: 16px;
+	}
 .dynamiclink_url {
 	margin-top: 8px;
 }
-
 .dynamiclink_url a {
 	color: #ffffff;
 	text-decoration: none;
 }
-
 .dynamiclink_url a:hover {
 	color: #7bb7e3;
 	text-decoration: underline;
 }
-
-.dynamiclink_url a,
-.dynamiclink_authorname {
+.dynamiclink_url a, .dynamiclink_authorname {
 	color: #ffffff;
 }
 
@@ -2084,38 +1829,32 @@ img.dynamiclink_preview {
 	color: #95a6b2;
 	margin-bottom: 4px;
 }
-
-.dynamiclink_app a {
-	color: #c6d4df;
-}
-
-.dynamiclink_app a:hover {
-	color: #ffffff;
-	text-decoration: underline;
-}
-
-.dynamiclink_app span {
-	color: #809fb7;
-}
-
-.dynamiclink_app img.app_icon {
-	vertical-align: top;
-	padding-right: 5px;
-	height: 16px;
-}
+	.dynamiclink_app a {
+		color: #c6d4df;
+	}
+	.dynamiclink_app a:hover {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+	.dynamiclink_app span {
+		color: #809fb7;
+	}
+	.dynamiclink_app img.app_icon {
+		vertical-align: top;
+		padding-right: 5px;
+		height: 16px;
+	}
 
 .dynamiclink_youtubeviewvideoembedded {
 	position: relative;
-	padding-bottom: 56.25%;
-	/* 16:9 */
+	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
 }
 
 .dynamiclink_sketchfabmodelembedded {
 	position: relative;
-	padding-bottom: 56.25%;
-	/* 16:9 */
+	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
 }
@@ -2136,12 +1875,10 @@ img.dynamiclink_preview {
 
 .dynamiclink_sketchfabmodelembedded {
 	position: relative;
-	padding-bottom: 56.25%;
-	/* 16:9 */
+	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
 }
-
 .dynamiclink_sketchfabmodelembedded iframe {
 	position: absolute;
 	top: 0;
@@ -2149,8 +1886,8 @@ img.dynamiclink_preview {
 	width: 100%;
 	height: 100%;
 }
-
-img.dynamiclink_sketchfab_play_overlay_image {
+img.dynamiclink_sketchfab_play_overlay_image
+{
 	position: absolute;
 	left: 83px;
 	margin-left: -25px;
@@ -2160,8 +1897,9 @@ img.dynamiclink_sketchfab_play_overlay_image {
 	height: 50px;
 }
 
-.dynamiclink_pointsshopitem {}
+.dynamiclink_pointsshopitem {
 
+}
 .dynamiclink_pointsshopitem .dynamiclink_itemtype {
 	padding-bottom: 2px;
 }
@@ -2170,48 +1908,51 @@ img.dynamiclink_sketchfab_play_overlay_image {
 .app_has_adult_content {
 	overflow: hidden;
 }
-
 .app_has_adult_content img.game_capsule {
-	filter: blur(30px);
+	filter: blur( 30px );
 }
 
 /* ugc with adult content */
-.ugc.has_adult_content {
+.ugc.has_adult_content
+{
 	overflow: hidden;
 }
-
 .ugc.has_adult_content img,
-.ugc.has_adult_content div.imgWallItem {
-	filter: blur(30px);
+.ugc.has_adult_content div.imgWallItem
+{
+	filter: blur( 30px );
 }
-
 .ugc.banned.has_adult_content img,
-.ugc.banned.has_adult_content.profile_media_item {
+.ugc.banned.has_adult_content.profile_media_item
+{
 	box-shadow: inset 0px 0px 1px 1px #ff0000;
 }
-
-.ugc.has_adult_content.internet_explorer {
+.ugc.has_adult_content.internet_explorer
+{
 	background-color: black;
 }
-
-.ugc.has_adult_content.internet_explorer img {
+.ugc.has_adult_content.internet_explorer img
+{
 	opacity: 0;
 	filter: none;
 }
 
-.ugc.has_adult_content.internet_explorer div.imgWallItem {
+.ugc.has_adult_content.internet_explorer div.imgWallItem
+{
 	filter: none;
 	opacity: 0.05;
 }
 
 .ugc.has_adult_content .workshopItemDetails,
-.ugc.has_adult_content .myguide_showcase_item {
+.ugc.has_adult_content .myguide_showcase_item
+{
 	opacity: 0.25;
 }
 
-.ugc.has_adult_content.ugc_show_warning_image::after {
+.ugc.has_adult_content.ugc_show_warning_image::after
+{
 	content: "";
-	background: url(https://community.akamai.steamstatic.com/public/shared/images/ico/icon_content_warning.png ) center center no-repeat;
+	background: url( https://community.akamai.steamstatic.com/public/shared/images/ico/icon_content_warning.png ) center center no-repeat;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -2219,16 +1960,17 @@ img.dynamiclink_sketchfab_play_overlay_image {
 	left: 0;
 	pointer-events: none;
 }
-
-.ugc.has_adult_content.dynamiclink_box::after {
+.ugc.has_adult_content.dynamiclink_box::after
+{
 	width: 88px;
 }
 
-.ugc .ugc_warning {
+.ugc .ugc_warning
+{
 	display: none;
 }
-
-.ugc.has_adult_content .ugc_warning {
+.ugc.has_adult_content .ugc_warning
+{
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -2238,31 +1980,33 @@ img.dynamiclink_sketchfab_play_overlay_image {
 	vertical-align: top;
 	text-align: center;
 	color: #ffffff;
-	background-color: rgba(0, 0, 0, 0.25);
+	background-color: rgba(0,0,0,0.25);
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
-.ugc.has_adult_content .ugc_warning:hover {
+.ugc.has_adult_content .ugc_warning:hover
+{
 	color: #ffffff;
 }
-
-.ugc.has_adult_content .ugc_warning.large {
+.ugc.has_adult_content .ugc_warning.large
+{
 	font-size: 1.25em;
 }
 
-.ugc.has_adult_content .ugc_warning .ugc_inline_option {
+.ugc.has_adult_content .ugc_warning .ugc_inline_option
+{
 	display: inline-block;
 	text-decoration: underline;
 }
-
-.ugc.has_adult_content .ugc_warning .ugc_inline_option:hover {
+.ugc.has_adult_content .ugc_warning .ugc_inline_option:hover
+{
 	color: #66C0F4;
 }
 
-.ugc.has_adult_content .ugc_warning .ugc_warning_image {
+.ugc.has_adult_content .ugc_warning .ugc_warning_image
+{
 	margin-top: 5px;
-	background: url(https://community.akamai.steamstatic.com/public/shared/images/ico/icon_content_warning.png ) center center no-repeat;
+	background: url( https://community.akamai.steamstatic.com/public/shared/images/ico/icon_content_warning.png ) center center no-repeat;
 	width: 100%;
 	height: 36px;
 	pointer-events: none;
@@ -2282,11 +2026,11 @@ img.dynamiclink_sketchfab_play_overlay_image {
 	z-index: 5;
 }
 
-.ugc_options>div {
+.ugc_options > div {
 	width: 15px;
 	height: 15px;
 
-	background-color: rgba(54, 97, 125, 1);
+	background-color: rgba(54,97,125,1);
 	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/v6/icon_expand.png');
 	background-position: 4px 4px;
 	border-radius: 3px;
@@ -2294,40 +2038,38 @@ img.dynamiclink_sketchfab_play_overlay_image {
 	box-shadow: 0 0 3px #000;
 }
 
-.ugc_options:hover>div {
+.ugc_options:hover > div {
 	background-color: #67c1f5;
 	color: #fff;
 	background-image: url('https://community.akamai.steamstatic.com/public/shared/images/v6/icon_expand_white.png');
 }
 
-*:hover>.ugc_options,
-.ugc_hover.ugc_options {
+*:hover > .ugc_options, .ugc_hover.ugc_options {
 	opacity: 1;
 	right: 0px;
 }
 
 .ugc_options_tooltip {
-	background: -webkit-linear-gradient(top, #e3eaef 5%, #c7d5e0 95%);
-	background: linear-gradient(to bottom, #e3eaef 5%, #c7d5e0 95%);
+background: -webkit-linear-gradient( top, #e3eaef 5%, #c7d5e0 95%);
+	background: linear-gradient( to bottom, #e3eaef 5%, #c7d5e0 95%);
 	padding: 2px 8px;
 	color: #fff;
 	border-radius: 3px;
 	box-shadow: 0 0 3px #000;
 }
 
-.ugc_options_tooltip>.option {
+.ugc_options_tooltip > .option  {
 	margin: 5px 0;
 	display: block;
 	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0,0,0,0.1);
 	border-radius: 2px;
 	padding: 4px 8px;
 	line-height: normal;
 	font-size: 11px;
 	color: #407898;
 }
-
-.ugc_options_tooltip>.option:hover {
+.ugc_options_tooltip > .option:hover {
 	color: #ffffff;
 	background-color: #67c1f5;
 }
@@ -2338,17 +2080,15 @@ img.dynamiclink_sketchfab_play_overlay_image {
 	text-align: center;
 	margin-bottom: 10px;
 }
-
 .adult_content_age_gate_dialog img {
 	width: 292px;
 }
 
 .adult_content_age_gate {
-	font-family: "Motiva Sans", Sans-serif;
-	font-weight: 300;
-	/* light */
+			font-family: "Motiva Sans", Sans-serif;
+		font-weight: 300; /* light */
 
-	text-align: center;
+			text-align: center;
 	max-width: 940px;
 	margin: 0 auto;
 
@@ -2376,7 +2116,6 @@ img.dynamiclink_sketchfab_play_overlay_image {
 .adult_content_age_gate p.descriptor span {
 	text-decoration: underline #7092a5;
 }
-
 .adult_content_age_gate label {
 	vertical-align: text-bottom;
 }
@@ -2396,7 +2135,6 @@ img.dynamiclink_sketchfab_play_overlay_image {
 .adult_content_age_gate .edit_preferences a {
 	text-decoration: underline;
 }
-
 .adult_content_age_gate .edit_preferences a:hover {
 	color: #66c0f4;
 }
@@ -2417,7 +2155,8 @@ img.dynamiclink_sketchfab_play_overlay_image {
 }
 
 /* early access tag on reviews*/
-.early_access_review {
+.early_access_review
+{
 	background-color: #4d6c8b;
 	border: 1px solid #779abc;
 	text-transform: uppercase;
@@ -2433,7 +2172,8 @@ img.dynamiclink_sketchfab_play_overlay_image {
 }
 
 /* pre release tag on reviews*/
-.pre_release_review {
+.pre_release_review
+{
 	background-color: #8b734d;
 	border: 1px solid #bca177;
 	text-transform: uppercase;
@@ -2460,68 +2200,61 @@ span.bb_spoiler:hover {
 	color: #ffffff;
 }
 
-span.bb_spoiler>span {
+span.bb_spoiler > span {
 	visibility: hidden;
 }
 
-span.bb_spoiler:hover>span {
+span.bb_spoiler:hover > span {
 	visibility: visible;
 }
 
-blockquote.bb_blockquote,
-.bb_wysiwyg blockquote {
+blockquote.bb_blockquote, .bb_wysiwyg blockquote {
 	border: 1px solid #56707f;
 	border-radius: 3px;
 	padding: 12px;
 	margin: 8px;
 
 	font-size: 92%;
-	display: table;
-	word-break: break-word;
+    display: table;
+    word-break: break-word;
+}
+.forumtopic_answer .answer_quote blockquote.bb_blockquote, .bb_wysiwyg blockquote {
+    border: 1px solid #457592;
 }
 
-.forumtopic_answer .answer_quote blockquote.bb_blockquote,
-.bb_wysiwyg blockquote {
-	border: 1px solid #457592;
+blockquote.bb_blockquote.with_author {
 }
-
-blockquote.bb_blockquote.with_author {}
 
 div.bb_quoteauthor {
 	font-size: 92%;
 	font-style: italic;
 }
 
-div.bb_h1,
-.bb_wysiwyg h1 {
+div.bb_h1, .bb_wysiwyg h1 {
 	font-size: 20px;
 	line-height: 23px;
 	color: #5aa9d6;
 	font-weight: normal;
-	margin-bottom: 10px;
-	clear: both;
+    margin-bottom: 10px;
+    clear: both;
 }
-
-div.bb_h2,
-.bb_wysiwyg h2 {
+div.bb_h2, .bb_wysiwyg h2 {
 	color: #5aa9d6;
 	margin-bottom: 6px;
 	margin-top: 8px;
 	font-size: 18px;
 	line-height: 21px;
 	font-weight: 400;
-	clear: both;
+	clear:both;
 }
-
-div.bb_h3,
-.bb_wysiwyg h3 {
+div.bb_h3, .bb_wysiwyg h3 {
 	color: #5aa9d6;
 	margin-bottom: 6px;
 	margin-top: 8px;
 	font-size: 16px;
 	line-height: 19px;
 	font-weight: 300;
-	clear: both;
+	clear:both;
 }
 
 
@@ -2530,8 +2263,8 @@ span.bb_strike {
 }
 
 div.bb_pullquote {
-	font-size: 18px;
-	font-weight: 600;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 span.bb_link_host {
@@ -2541,15 +2274,14 @@ span.bb_link_host {
 	top: -1px;
 }
 
-div.bb_code,
-.bb_wysiwyg pre {
+div.bb_code, .bb_wysiwyg pre {
 	border: 1px solid #535354;
 	border-radius: 3px;
 	padding: 12px;
 	margin: 8px;
 
 	font-size: 11px;
-	font-family: Consolas, monospace;
+	font-family: Consolas,monospace;
 	white-space: pre;
 	white-space: pre-wrap;
 	overflow-x: auto;
@@ -2561,62 +2293,65 @@ span.bb_removedlink {
 	font-size: 80%;
 }
 
-div.bb_table {
+div.bb_table
+{
 	display: table;
 	font-size: 12px;
 }
 
-div.bb_table div.bb_table_th {
+div.bb_table div.bb_table_th
+{
 	display: table-cell;
 	font-weight: bold;
 	border: 1px solid #4d4d4d;
 	padding: 4px;
 }
 
-div.bb_table div.bb_table_th img.sharedFilePreviewImage {
+div.bb_table div.bb_table_th img.sharedFilePreviewImage
+{
 	margin: 0px;
 }
 
-div.bb_table div.bb_table_tr {
+div.bb_table div.bb_table_tr
+{
 	display: table-row;
 }
 
-div.bb_table div.bb_table_td {
+div.bb_table div.bb_table_td
+{
 	display: table-cell;
 	vertical-align: middle;
 	border: 1px solid #4d4d4d;
 	padding: 4px;
 }
 
-div.bb_table div.bb_table_td img.sharedFilePreviewImage {
+div.bb_table div.bb_table_td img.sharedFilePreviewImage
+{
 	margin: 0px;
 }
 
 video.bb_video {
 	width: 100%;
 }
-
-.bb_ul>li {
-	list-style-position: outside;
+.bb_ul > li {
+    list-style-position: outside;
 }
 
 /* V6 */
 
-body.v6 .store_nav .popup_block_new .popup_body,
-body.v6 #footer_nav .popup_block_new .popup_body {
-	border: none;
-	position: relative;
-	background: #417A9B;
+body.v6 .store_nav .popup_block_new .popup_body, body.v6 #footer_nav .popup_block_new .popup_body {
+    border: none;
+    position: relative;
+    background: #417A9B;
 }
 
 body.v6 .store_nav .popup_menu_subheader,
-body.v6 #footer_nav .popup_menu_subheader {
-	color: #13242e;
+body.v6 #footer_nav .popup_menu_subheader{
+    color: #13242e;
 }
-
 body.v6 .store_nav .popup_menu .hr,
-body.v6 #footer_nav .popup_menu .hr {
-	background-color: #33627d;
+body.v6 #footer_nav .popup_menu .hr{
+    background-color: #33627d;
 	margin: 5px 0px 5px 0px;
 }
 
@@ -2630,7 +2365,7 @@ body.v6 #footer_nav .popup_menu .hr {
 	top: 14px;
 	font-size: 10px;
 	color: #111111;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
 
 	height: 18px;
 	line-height: 19px;
@@ -2638,13 +2373,11 @@ body.v6 #footer_nav .popup_menu .hr {
 	white-space: nowrap;
 	z-index: 5;
 }
-
 .store_main_capsule .ds_flag {
-	top: 42px;
+    top: 42px;
 }
-
 .broadcast_capsule .ds_flag {
-	top: 28px;
+    top: 28px;
 }
 
 .ds_flag.ds_owned_flag {
@@ -2693,12 +2426,13 @@ body.v6 #footer_nav .popup_menu .hr {
 	padding-left: 18px;
 }
 
-.ds_flagged.ds_excluded_by_preferences {}
+.ds_flagged.ds_excluded_by_preferences {
+}
 
 /* Scrollbar CSS. Move this to somewhere common before checking in thankx */
 
 .v_scrollbar {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0,0,0,0.2);
 	border-radius: 2px;
 }
 
@@ -2706,23 +2440,15 @@ body.v6 #footer_nav .popup_menu .hr {
 	transition: left 0.3s, top 0.3s;
 }
 
-.v_scrollbar>.handle {
-	background: #3d6c8d;
-	/* Old browsers */
-	background: -moz-linear-gradient(-45deg, #3d6c8d 0%, #2e5470 100%);
-	/* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #3d6c8d), color-stop(100%, #2e5470));
-	/* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(-45deg, #3d6c8d 0%, #2e5470 100%);
-	/* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(-45deg, #3d6c8d 0%, #2e5470 100%);
-	/* Opera 11.10+ */
-	background: -ms-linear-gradient(-45deg, #3d6c8d 0%, #2e5470 100%);
-	/* IE10+ */
-	background: linear-gradient(135deg, #3d6c8d 0%, #2e5470 100%);
-	/* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d6c8d', endColorstr='#2e5470', GradientType=1);
-	/* IE6-9 fallback on horizontal gradient */
+.v_scrollbar > .handle {
+	background: #3d6c8d; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #3d6c8d 0%, #2e5470 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3d6c8d), color-stop(100%,#2e5470)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #3d6c8d 0%,#2e5470 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #3d6c8d 0%,#2e5470 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #3d6c8d 0%,#2e5470 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #3d6c8d 0%,#2e5470 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d6c8d', endColorstr='#2e5470',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	border-radius: 2px;
 }
 
@@ -2734,83 +2460,97 @@ body.v6 #footer_nav .popup_menu .hr {
 	width: 14px;
 }
 
-.v_scrollbar.vertical>.handle {
+.v_scrollbar.vertical > .handle {
 
 	height: 24px;
 	width: 14px;
 }
 
-.v_scrollbar.horizontal>.handle {
+.v_scrollbar.horizontal > .handle {
 
 	height: 14px;
 	width: 24px;
 }
 
 
-.LoadingWrapper {
+.LoadingWrapper
+{
 	position: relative;
 	margin: auto auto;
 	vertical-align: middle;
 }
 
-.LoadingWrapper .LoadingThrobber {
+.LoadingWrapper .LoadingThrobber
+{
 	margin: 0px auto 40px auto;
 	width: 62px;
 	height: 62px;
 }
 
-.LoadingWrapper .LoadingText {
+.LoadingWrapper .LoadingText
+{
 	color: #60acde;
 	font-size: 22px;
 	text-align: center;
 }
 
-@keyframes loading_throbber_bar {
-	0% {
-		transform: scale(1.0, 0.6);
+@keyframes loading_throbber_bar
+{
+	0%
+	{
+		transform: scale( 1.0, 0.6 );
 		background-color: #67c1f5;
 	}
 
-	30% {
-		transform: scale(1.0, 1.0);
+	30%
+	{
+		transform: scale( 1.0, 1.0 );
 		background-color: #67c1f5;
 	}
 
-	55% {
-		transform: scale(1.0, 0.6);
+	55%
+	{
+		transform: scale( 1.0, 0.6 );
 		background-color: #67c1f5;
 	}
 
-	100% {
-		transform: scale(1.0, 0.6);
-		background-color: #67c1f5;
-	}
-}
-
-
-@-webkit-keyframes loading_throbber_bar {
-	0% {
-		-webkit-transform: scale(1.0, 0.7);
-		background-color: #67c1f5;
-	}
-
-	30% {
-		-webkit-transform: scale(1.0, 1.0);
-		background-color: #67c1f5;
-	}
-
-	55% {
-		-webkit-transform: scale(1.0, 0.7);
-		background-color: #67c1f5;
-	}
-
-	100% {
-		-webkit-transform: scale(1.0, 0.7);
+	100%
+	{
+		transform: scale( 1.0, 0.6 );
 		background-color: #67c1f5;
 	}
 }
 
-.LoadingWrapper .LoadingThrobber .Bar {
+
+@-webkit-keyframes loading_throbber_bar
+{
+	0%
+	{
+		-webkit-transform: scale( 1.0, 0.7 );
+		background-color: #67c1f5;
+	}
+
+	30%
+	{
+		-webkit-transform: scale( 1.0, 1.0 );
+		background-color: #67c1f5;
+	}
+
+	55%
+	{
+		-webkit-transform: scale( 1.0, 0.7 );
+		background-color: #67c1f5;
+	}
+
+	100%
+	{
+		-webkit-transform: scale( 1.0, 0.7 );
+		background-color: #67c1f5;
+	}
+}
+
+.LoadingWrapper .LoadingThrobber .Bar
+{
 	-webkit-animation: test 2s infinite;
 	float: left;
 	margin-right: 6px;
@@ -2822,14 +2562,18 @@ body.v6 #footer_nav .popup_menu .hr {
 	-webkit-animation: loading_throbber_bar 1s ease-in-out infinite;
 }
 
-.LoadingWrapper .LoadingThrobber .Bar1 {}
+.LoadingWrapper .LoadingThrobber .Bar1
+{
+}
 
-.LoadingWrapper .LoadingThrobber .Bar2 {
+.LoadingWrapper .LoadingThrobber .Bar2
+{
 	animation-delay: 0.16s;
 	-webkit-animation-delay: 0.16s;
 }
 
-.LoadingWrapper .LoadingThrobber .Bar3 {
+.LoadingWrapper .LoadingThrobber .Bar3
+{
 	animation-delay: 0.32s;
 	-webkit-animation-delay: 0.32s;
 }
@@ -2858,30 +2602,24 @@ body.v6 #footer_nav .popup_menu .hr {
 	color: #c6d4df;
 	font-size: 12px;
 }
-
 .shared_game_rating .game_rating_agency {
 	margin-top: 8px;
 }
-
 .shared_game_rating .game_rating_required_age {
-	font-family: "Motiva Sans", Sans-serif;
-	font-weight: normal;
-	/* normal */
+    		font-family: "Motiva Sans", Sans-serif;
+		font-weight: normal; /* normal */
 
-	text-transform: uppercase;
+			text-transform: uppercase;
 	margin-bottom: 5px;
-	font-size: 14px;
-	color: white;
+    font-size: 14px;
+    color: white;
 }
-
 .shared_game_rating .game_rating_details {
 	display: flex;
 }
-
 .shared_game_rating .game_rating_icon {
 	margin-right: 10px;
 }
-
 .shared_game_rating p.descriptorText {
 	margin: 0;
 
@@ -2897,45 +2635,38 @@ body.v6 #footer_nav .popup_menu .hr {
 	width: 150px;
 	background: #DADEE0;
 }
-
-.community_tooltip.reaction_award_hover,
-.store_tooltip.reaction_award_hover {
-	padding: 0px;
-}
-
-.reaction_award_hover .reaction_award_icon {
-	background-color: #474C52;
-	border-radius: 3px 3px 0 0;
-	padding-top: 5px;
-	text-align: center;
-}
-
-.reaction_award_hover .reaction_award_icon>img {
-	height: 100px;
-}
-
-.reaction_award_hover .reaction_award_info {
-	padding: 10px;
-	text-align: center;
-}
-
-.reaction_award_hover .reaction_award_name {
-	font-weight: bold;
-	font-size: 12px;
-	color: #0A212E;
-}
-
-.reaction_award_hover .reaction_award_desc {
-	padding-top: 5px;
-	font-size: 10px;
-	color: #0A212E;
-}
-
-.reaction_award_hover .reaction_award_points {
-	padding-top: 5px;
-	font-size: 10px;
-	color: #737678;
-}
+	.community_tooltip.reaction_award_hover,
+	.store_tooltip.reaction_award_hover {
+		padding: 0px;
+	}
+	.reaction_award_hover .reaction_award_icon {
+		background-color: #474C52;
+		border-radius: 3px 3px 0 0;
+		padding-top: 5px;
+		text-align: center;
+	}
+	.reaction_award_hover .reaction_award_icon > img {
+		height: 100px;
+	}
+	.reaction_award_hover .reaction_award_info {
+		padding: 10px;
+		text-align: center;
+	}
+	.reaction_award_hover .reaction_award_name {
+		font-weight: bold;
+		font-size: 12px;
+		color: #0A212E;
+	}
+	.reaction_award_hover .reaction_award_desc {
+		padding-top: 5px;
+		font-size: 10px;
+		color: #0A212E;
+	}
+	.reaction_award_hover .reaction_award_points {
+		padding-top: 5px;
+		font-size: 10px;
+		color: #737678;
+	}
 
 /* community awards */
 .community_award_btn_icon {
@@ -2958,7 +2689,6 @@ body.v6 #footer_nav .popup_menu .hr {
 	height: 28px;
 	cursor: pointer;
 }
-
 .community_award:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 }
@@ -2967,14 +2697,12 @@ body.v6 #footer_nav .popup_menu .hr {
 	height: 20px;
 	vertical-align: middle;
 }
-
 .community_award_count {
 	color: #66c0f4;
 	font-size: 13px;
 	vertical-align: middle;
 	font-weight: bold;
 }
-
 .community_award_count.hidden {
 	display: none;
 }
@@ -2988,36 +2716,33 @@ body.v6 #footer_nav .popup_menu .hr {
 .community_award_ctn_hover {
 	display: inline-block;
 }
+	.community_award_ctn_hover .community_award {
+		display: inline-block;
+		background-color: rgba(255, 255, 255, 0.05);
+		border-radius: 5px;
+		padding: 3px;
+		margin: 1px;
+		line-height: unset;
+		height: unset;
+	}
+	.community_award_ctn_hover .community_award .community_award_icon {
+		width: 16px;
+		height: 16px;
+		vertical-align: middle;
+	}
+	.community_award_ctn_hover .community_award .community_award_count {
+		color: #66c0f4;
+		font-size: 12px;
+		vertical-align: middle;
+		font-weight: bold;
+		padding: 0;
+	}
+	.community_award_ctn_hover .community_award .community_award_count.hidden {
+		display: none;
+	}
 
-.community_award_ctn_hover .community_award {
-	display: inline-block;
-	background-color: rgba(255, 255, 255, 0.05);
-	border-radius: 5px;
-	padding: 3px;
-	margin: 1px;
-	line-height: unset;
-	height: unset;
-}
-
-.community_award_ctn_hover .community_award .community_award_icon {
-	width: 16px;
-	height: 16px;
-	vertical-align: middle;
-}
-
-.community_award_ctn_hover .community_award .community_award_count {
-	color: #66c0f4;
-	font-size: 12px;
-	vertical-align: middle;
-	font-weight: bold;
-	padding: 0;
-}
-
-.community_award_ctn_hover .community_award .community_award_count.hidden {
-	display: none;
-}
-
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 910px)
+{
 	html.responsive .newmodal {
 		min-width: 0;
 	}
@@ -3028,17 +2753,17 @@ body.v6 #footer_nav .popup_menu .hr {
 	}
 
 }
+	html.responsive.touch .newmodal {
+		min-width: 0;
+	}
 
-html.responsive.touch .newmodal {
-	min-width: 0;
-}
+	/* workaround for ios safari, having the background be position: fixed introduces display glitches */
+	html.responsive.touch .newmodal_background {
+		position: absolute;
+	}
 
-/* workaround for ios safari, having the background be position: fixed introduces display glitches */
-html.responsive.touch .newmodal_background {
-	position: absolute;
-}
-
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 910px)
+{
 	html.responsive .newmodal_content {
 		padding: 15px;
 	}
@@ -3048,90 +2773,88 @@ html.responsive.touch .newmodal_background {
 /* China Desktop Footer */
 
 body.v6 #footer.china_footer {
-	padding: 16px 16px 60px 16px;
+    padding: 16px 16px 60px 16px;
 }
 
 body.v6 #footer_spacer.china_spacer {
 	height: 330px;
 }
 
-.china_footer_content a,
-#footer .china_footer_content a {
-	color: #8F8E93;
+.china_footer_content a, #footer .china_footer_content a {
+    color: #8F8E93;
 }
 
-.china_footer_content a:hover,
-#footer .china_footer_content a:hover {
-	color: #FFFFFF;
+.china_footer_content a:hover, #footer .china_footer_content a:hover {
+    color: #FFFFFF;
 }
 
 .china_footer_navlinks {
-	user-select: none;
-	margin-left: 50px;
+    user-select: none;
+    margin-left: 50px;
 }
 
 .china_footer_content {
-	max-width: calc(910px - 16px);
-	margin: 0px auto;
-	padding-top: 16px;
-	color: #8F8E93;
-	font-family: "Motiva Sans", Sans-serif;
-	font-weight: normal;
-	/* normal */
+    max-width: calc( 910px - 16px);
+    margin: 0px auto;
+    padding-top: 16px;
+    color: #8F8E93;
+		font-family: "Motiva Sans", Sans-serif;
+		font-weight: normal; /* normal */
 
-}
+		}
 
 .china_footer_row {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .china_pw_logo {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
 .china_steam_logo {
-	width: 142px;
-	height: 44px;
+    width: 142px;
+    height: 44px;
 }
 
 .china_footer_line {
-	height: 1px;
-	background: #24272C;
-	margin: 20px 0;
+    height: 1px;
+    background: #24272C;
+    margin: 20px 0;
 }
 
 .china_footer_social_box {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .china_footer_social_box:first-of-type {
-	margin-right: 20px;
+    margin-right: 20px;
 }
 
 .china_footer_social_box.tooltip {
-	cursor: default;
-	user-select: none;
+    cursor: default;
+    user-select: none;
 }
 
 .china_footer_socials_ctn {
-	display: flex;
+    display: flex;
 }
 
 .china_footer_legal_ctn {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
-.china_footer_logos img {
-	width: 96px;
-	vertical-align: top;
+.china_footer_logos img  {
+    width: 96px;
+    vertical-align: top;
 }
 
-.gpnav:focus {
-	outline: 4px solid blue;
-	box-shadow: 0 0 2px inset #0000ff;
+.gpnav:focus
+{
+    outline: 4px solid blue;
+    box-shadow: 0 0 2px inset #0000ff;
 }
 
 
@@ -3151,25 +2874,20 @@ html.responsive .ds_steam_deck_compat {
 	backdrop-filter: blur(24px);
 	transition: opacity 0.1s ease;
 }
-
 html.responsive .gpfocus .ds_steam_deck_compat {
 	transition: opacity 0.2s ease 0.1s;
 	opacity: 1;
 
 }
-
 .ds_steam_deck_compat.verified {
 	background: url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-logo.svg') 3px no-repeat, url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-verified.svg') 22px no-repeat;
 }
-
 .ds_steam_deck_compat.playable {
 	background: url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-logo.svg') 3px no-repeat, url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-playable.svg') 22px no-repeat;
 }
-
 .ds_steam_deck_compat.unsupported {
 	background: url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-logo.svg') 3px no-repeat, url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-unsupported.svg') 22px no-repeat;
 }
-
 .ds_steam_deck_compat.unknown {
 	background: url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-logo.svg') 3px no-repeat, url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-unknown.svg') 22px no-repeat;
 }
@@ -3183,22 +2901,18 @@ html.responsive .gpfocus .ds_steam_deck_compat {
 	background: url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-logo.svg') left no-repeat;
 	background-size: 20px 20px;
 }
-
 .steam_deck_compat.verified {
 	display: inline-block;
 	background: url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-logo.svg') left no-repeat, url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-verified.svg') right no-repeat;
 }
-
 .steam_deck_compat.playable {
 	display: inline-block;
 	background: url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-logo.svg') left no-repeat, url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-playable.svg') right no-repeat;
 }
-
 .steam_deck_compat.unsupported {
 	display: inline-block;
 	background: url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-logo.svg') left no-repeat, url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-unsupported.svg') right no-repeat;
 }
-
 .steam_deck_compat.unknown {
 	display: inline-block;
 	background: url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-logo.svg') left no-repeat, url('https://community.akamai.steamstatic.com/public/shared/images/ico/ico-deck-unknown.svg') right no-repeat;
